@@ -1,0 +1,12 @@
+The stack we will be using
+
+- MongoDB (Atlas)
+- Express
+- React
+- Node.js
+- GraphQL (Apollo)
+
+Setup
+
+- node.js (nodejs.org)
+- mongodb.com - Free cluster
