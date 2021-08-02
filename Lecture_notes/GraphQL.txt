@@ -1,0 +1,20 @@
+A technology agnostic query language that can be used on top of any type of backend
+Sits on our existing API
+As long as data is shaped properly, it will receive and send data to the web client
+
+3 types of operations
+Queries - Reading data
+Mutations - CUD operations
+Subscriptions - Listening to changes in real time - Done using websockets in the backend
+
+We always send POST (READ or WRITE) requests with some information in the body as to what info we want back or save on the DB
+
+GraphQL creates a single endpoint in order to sort of collate REST APIs. Finer control over the amount of data requested and sent
+
+Without GraphQL we need to scour through the entire json response for a REST API call; With it we can decide exactly what we want back.
+With traditional REST APIs this can only be achieved by writing more and more, need-specific endpoints. 
+GraphQL solves this by sending a POST request to one endpoint and specifying what resource we want and what fields we want
+
+By changing the request body alone, we can achieve several functionalities from a single endpoint
+
+https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e
